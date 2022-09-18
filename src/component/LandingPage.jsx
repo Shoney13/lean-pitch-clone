@@ -6,7 +6,7 @@ const LandingPage = () => {
   return (
     <>
       <IndexPanel />
-      <WhyWeMatter/>
+      <WhyWeMatter />
     </>
   );
 };
