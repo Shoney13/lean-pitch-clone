@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import BlogCard from "./BlogCard";
+import { blogData } from "./blogData";
 import styles from "./CoursesInfo.module.css";
 const MoreContent = () => {
   return (
@@ -18,7 +20,14 @@ const MoreContent = () => {
       <div className={styles.courses_info_panel}>
         <h1 className={styles.courses_info_title}>Blogs</h1>
         <div className={styles.courses_course_Card_container}>
-          {/* TODO: Map Videos Cards */}
+          {blogData.map((blog, index) => (
+            <BlogCard
+              title={blog.title}
+              image={blog.image}
+              writer={blog.writer}
+              key={index}
+            />
+          ))}
         </div>
       </div>
       <div className={styles.courses_info_panel}>

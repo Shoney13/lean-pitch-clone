@@ -1,0 +1,27 @@
+.blog_card_main {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.blog_title {
+  color: yellow;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog_writer {
+  color: white;
+}
+
+.blog_card_title_container {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+}
