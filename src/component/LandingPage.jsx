@@ -1,4 +1,5 @@
 import React from "react";
+import Conference from "./Conference";
 import CoursesInfo from "./CoursesInfo";
 import IndexPanel from "./IndexPanel";
 import styles from "./LandingPage.module.css";
@@ -9,6 +10,7 @@ const LandingPage = () => {
       <IndexPanel />
       <WhyWeMatter />
       <CoursesInfo />
+      <Conference/>
     </>
   );
 };
