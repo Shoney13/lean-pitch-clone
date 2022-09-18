@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./WhyWeMatter.module.css";
+import commonStyles from '../assets/common/common.module.css'
 import growthArrow from "../assets/red_arrow.png";
 import { ArrowRight } from "react-bootstrap-icons";
 const WhyWeMatter = () => {
@@ -37,7 +38,7 @@ const WhyWeMatter = () => {
             allowFullScreen
           ></iframe>
         </div>
-        <button className={`${styles.button} ${styles.button_community}`}>
+        <button className={`${commonStyles.pill_button} ${commonStyles.button_community}`}>
           Join Our Community <ArrowRight />
         </button>
       </div>
@@ -63,11 +64,11 @@ const WhyWeMatter = () => {
             Share your interest by submitting your details. We will get back to
             you with more information.
           </p>
-          <div className={styles.labs_buttons_container}>
-            <button className={`${styles.button} ${styles.button_labs}`}>
+          <div className={commonStyles.labs_buttons_container}>
+            <button className={`${commonStyles.pill_button} ${commonStyles.pill_button_labs}`}>
               View Details <ArrowRight />
             </button>
-            <button className={`${styles.button} ${styles.button_labs}`}>
+            <button className={`${commonStyles.pill_button} ${commonStyles.pill_button_labs}`}>
               Register Now <ArrowRight />
             </button>
           </div>

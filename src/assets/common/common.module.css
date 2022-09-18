@@ -1,0 +1,56 @@
+
+.pill_button {
+  background: none;
+  border: none;
+  color: black;
+  border-radius: 50px;
+  box-shadow: black 0 0 0 1px;
+  align-self: center;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 200ms ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pill_button > svg {
+  font-size: 2rem;
+}
+.button_community {
+  color: white;
+  box-shadow: white 0 0 0 1px;
+}
+.pill_button:hover {
+  scale: 1.1;
+}
+
+.labs_buttons_container {
+  display: flex;
+  align-items: center;
+}
+.pill_button_labs {
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  box-shadow: red 0 0 0 1px;
+  font-size: 1rem;
+}
+
+.box_button{
+  box-shadow: black 0 0 0 2px;
+  padding: 0.5rem 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.box_button.active{
+  color: white;
+  background-color: black;
+}
