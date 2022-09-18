@@ -1,9 +1,14 @@
 .index_panel_main {
+  position: relative;
+  height: calc(100vh - 50px);
+}
+.index_panel_main::before {
+  content: "";
   position: absolute;
   display: block;
-  height: calc(100% - 50px);
+  height: calc(100%);
   width: 100%;
-  top: 50px;
+  top: 0px;
   left: 0px;
   z-index: -1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -26,20 +31,19 @@
   width: 400px;
   font-weight: 500;
 }
-.index_list_item{
+.index_list_item {
   cursor: pointer;
 }
 .index_list_item.active {
   color: black;
   background-color: yellow;
 }
-.more_info{
+.more_info {
   width: 100%;
   margin: 1rem 1rem 1rem 0;
 }
 
-.more_info.active{
+.more_info.active {
   box-shadow: inset yellow 0 0 0 5px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-
 }
