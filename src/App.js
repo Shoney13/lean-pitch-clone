@@ -1,13 +1,14 @@
-import React from 'react'
-import NavBar from './component/NavBar'
+import React from "react";
+import LandingPage from "./component/LandingPage";
+import NavBar from "./component/NavBar";
 
 const App = () => {
   return (
     <>
-    <NavBar/>
-    
+      <NavBar />
+      <LandingPage/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
