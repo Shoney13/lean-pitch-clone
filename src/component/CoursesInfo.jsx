@@ -4,31 +4,31 @@ import commonStyles from "../assets/common/common.module.css";
 import { FunnelFill } from "react-bootstrap-icons";
 import { trainingData } from "./trainingData";
 import CourseCard from "./CourseCard";
-import img1 from '../assets/CSPO.png'
-import img2 from '../assets/csm.png'
-import img3 from '../assets/logo-icp-acc.png'
-import img4 from '../assets/A-CSPO.png'
+import img1 from "../assets/CSPO.png";
+import img2 from "../assets/csm.png";
+import img3 from "../assets/logo-icp-acc.png";
+import img4 from "../assets/A-CSPO.png";
 const CoursesInfo = () => {
   const [meetupSelected, setMeetupSelected] = useState("upcoming");
   const [webinarSelected, setWebinarSelected] = useState("upcoming");
-  const getImage = (index) =>{
+  const getImage = (index) => {
     switch (index) {
       case 0:
         return img1;
-    
+
       case 1:
         return img2;
-    
+
       case 2:
         return img3;
-    
+
       case 3:
         return img4;
-    
+
       default:
         break;
     }
-  }
+  };
   return (
     <div className={styles.courses_info_main}>
       <div className={styles.courses_info_panel}>
