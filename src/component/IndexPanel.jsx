@@ -8,6 +8,8 @@ import img3 from "../assets/logo-icp-acc.png";
 import img4 from "../assets/A-CSPO.png";
 import { webinarData } from "./webinarData";
 import BlogCard from "./BlogCard";
+import Conference from "./Conference";
+import { blogData } from "./blogData";
 const IndexPanel = () => {
   const indexArray = [
     "Trainings",
@@ -97,6 +99,29 @@ const IndexPanel = () => {
                   key={index}
                 />
               ))}
+            </div>
+          )}
+          {currActiveIdx === 3 && <Conference />}
+          {currActiveIdx === 6 && (
+            <div className={styles.index_panel_course_card_container}>
+              {blogData.map((blog, index) => (
+                <BlogCard
+                  title={blog.title}
+                  image={blog.image}
+                  writer={blog.writer}
+                  key={index}
+                />
+              ))}
+            </div>
+          )}
+          {(currActiveIdx === 4||currActiveIdx === 5|| currActiveIdx === 7||currActiveIdx === 8||currActiveIdx === 9) && (
+            <div className={styles.index_panel_subtitle}>
+              More Information about {indexArray[currActiveIdx]} is not available right now.
+            </div>
+          )}
+          {currActiveIdx === 10 && (
+            <div className={styles.index_panel_subtitle}>
+              We call ourselves curators of software development pitches. We got into this business in Sep 2011 with a goal to empower our customers to achieve greater values in whatever they do through tactical lean strategies. We believe that every human being is born with Agile Mindset and we would like to bring them back to apply empirical approach in every problem they solve. We develop products and provide services for both product discovery and product delivery cycles of Software Product Development.
             </div>
           )}
         </div>
