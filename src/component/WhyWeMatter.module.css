@@ -67,3 +67,21 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media screen and (max-width: 600px){
+  .inside_first_panel {
+    flex-direction: column;
+  }
+  .first_panel_text_container,.inside_second_panel {
+    width: 100%;
+  }
+  .second_panel{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../assets/pt_lab_image.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .second_panel_image{
+    display: none;
+  }
+}
