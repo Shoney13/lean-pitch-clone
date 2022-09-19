@@ -4,6 +4,8 @@ import commonStyles from "../assets/common/common.module.css";
 import { FunnelFill } from "react-bootstrap-icons";
 import { trainingData } from "./trainingData";
 import CourseCard from "./CourseCard";
+import BlogCard from "./BlogCard";
+import {webinarData} from "./webinarData";
 import img1 from "../assets/CSPO.png";
 import img2 from "../assets/csm.png";
 import img3 from "../assets/logo-icp-acc.png";
@@ -101,7 +103,16 @@ const CoursesInfo = () => {
             Past
           </span>
         </div>
-        {/* TODO: Add Webinar Card */}
+        <div className={styles.courses_course_Card_container}>
+          {webinarData.map((blog, index) => (
+            <BlogCard
+              title={blog.title}
+              image={blog.image}
+              writer={blog.writer}
+              key={index}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

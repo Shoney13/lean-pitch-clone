@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import moment from "moment";
+import React from "react";
 import commonStyles from "../assets/common/common.module.css";
 import styles from "./CourseCard.module.css";
 const CourseCard = (props) => {
@@ -15,7 +16,7 @@ const CourseCard = (props) => {
           {" "}
           Upcoming Training
         </span>
-        <span className={`${styles.course_card_date}`}>{/* TODO: Format Date */date}</span>
+        <span className={`${styles.course_card_date}`}>{moment(date).format("Do MMM, YYYY")}</span>
       </div>
       <button
         className={`${commonStyles.pill_button} ${commonStyles.button_register}`}

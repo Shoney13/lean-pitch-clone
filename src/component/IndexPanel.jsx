@@ -6,6 +6,8 @@ import img1 from "../assets/CSPO.png";
 import img2 from "../assets/csm.png";
 import img3 from "../assets/logo-icp-acc.png";
 import img4 from "../assets/A-CSPO.png";
+import { webinarData } from "./webinarData";
+import BlogCard from "./BlogCard";
 const IndexPanel = () => {
   const indexArray = [
     "Trainings",
@@ -83,6 +85,18 @@ const IndexPanel = () => {
           {currActiveIdx === 1 && (
             <div className={styles.index_panel_subtitle}>
               Awesome meetups will be here soon!
+            </div>
+          )}
+          {currActiveIdx === 2 && (
+            <div className={styles.index_panel_course_card_container}>
+              {webinarData.map((blog, index) => (
+                <BlogCard
+                  title={blog.title}
+                  image={blog.image}
+                  writer={blog.writer}
+                  key={index}
+                />
+              ))}
             </div>
           )}
         </div>

@@ -6,6 +6,11 @@
   height: 150px;
   padding: 0.5rem;
   position: relative;
+  transition: all 200ms ease;
+}
+
+.blog_card_main:hover {
+  scale: 1.1;
 }
 
 .blog_title {
